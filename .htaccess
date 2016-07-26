@@ -1,0 +1,8 @@
+RewriteEngine on
+
+#RewriteCond %{HTTPS} !=on
+#RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+RewriteRule ^hauptmensa$ index.php?m=1 [L]
+RewriteRule ^campus-vita$ index.php?m=2 [L]
+RewriteRule ^schweinemensa$ index.php?m=3 [L]
