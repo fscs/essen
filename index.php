@@ -1,4 +1,5 @@
 <?php
+require_once("./url.php");
 session_start();
 $sid = session_id();
 $day = date("Ymd");
@@ -29,7 +30,7 @@ if(file_exists($cacheFolder.$cacheName) && filemtime($cacheFolder.$cacheName) > 
     echo file_get_contents($cacheFolder.$cacheName);
 }
 else{
-    $content = file_get_contents('http://www.studentenwerk-duesseldorf.de/Essen/PrintSpeiseplan.php?ort='.$mensa);
+    $content = file_get_contents($essensurl . $mensa);
     $doc = new DOMDocument();
     @$doc->loadHTML($content);
     $table = $doc->getElementsByTagName('table');
