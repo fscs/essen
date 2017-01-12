@@ -3,3 +3,5 @@ access.db
 cache/
 
 url.php
+
+cron.sh
