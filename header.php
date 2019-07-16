@@ -26,7 +26,7 @@ function loadImages() {
 <ul>
 <li><a href="hauptmensa" class="<?= ($m=="m1" ? "active" : "") ?>">Hauptmensa</a></li>
 <li><a href="campus-vita" class="<?= ($m=="m2" ? "active" : "") ?>">Campus Vita</a></li>
-<li><a href="sued" class="<?= ($m=="m3" ? "active" : "") ?>">Essensausgabe Süd</a></li>
+<li><a href="sued" class="<?= ($m=="m3" ? "active" : "") ?>">Essen Math.-Nat Fakultät</a></li>
 </ul>
 </div>
 
